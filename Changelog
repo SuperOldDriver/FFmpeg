@@ -2,6 +2,17 @@ Entries are sorted chronologically from oldest to youngest within each release,
 releases are sorted from youngest to oldest.
 
 version <next>:
+- AudioToolbox output device
+- MacCaption demuxer
+- PGX decoder
+- chromanr video filter
+- VDPAU accelerated HEVC 10/12bit decoding
+- ADPCM IMA Ubisoft APM encoder
+- Rayman 2 APM muxer
+- AV1 encoding support SVT-AV1
+
+
+version 4.3:
 - v360 filter
 - Intel QSV-accelerated MJPEG decoding
 - Intel QSV-accelerated VP9 decoding
@@ -71,6 +82,10 @@ version <next>:
 - gradients source video filter
 - MediaFoundation encoder wrapper
 - untile filter
+- Simon & Schuster Interactive ADPCM encoder
+- PFM decoder
+- dblur video filter
+- Real War KVAG muxer
 
 
 version 4.2:

@@ -663,6 +663,7 @@
     <ClCompile Include="..\libavcodec\pcx.c" />
     <ClCompile Include="..\libavcodec\pcxenc.c" />
     <ClCompile Include="..\libavcodec\pgssubdec.c" />
+    <ClCompile Include="..\libavcodec\pgxdec.c" />
     <ClCompile Include="..\libavcodec\pictordec.c" />
     <ClCompile Include="..\libavcodec\pixlet.c" />
     <ClCompile Include="..\libavcodec\textdec.c" />
@@ -927,6 +928,7 @@
     <ClCompile Include="..\libavcodec\h263_parser.c" />
     <ClCompile Include="..\libavcodec\h264_parser.c" />
     <ClCompile Include="..\libavcodec\hevc_parser.c" />
+    <ClCompile Include="..\libavcodec\jpeg2000_parser.c" />
     <ClCompile Include="..\libavcodec\mjpeg_parser.c" />
     <ClCompile Include="..\libavcodec\mlp_parse.c" />
     <ClCompile Include="..\libavcodec\mlp_parser.c" />
@@ -1233,6 +1235,7 @@
     <ClInclude Include="..\libavcodec\avdct.h" />
     <ClInclude Include="..\libavcodec\avfft.h" />
     <ClInclude Include="..\libavcodec\bsf.h" />
+    <ClInclude Include="..\libavcodec\codec.h" />
     <ClInclude Include="..\libavcodec\codec_desc.h" />
     <ClInclude Include="..\libavcodec\codec_id.h" />
     <ClInclude Include="..\libavcodec\codec_par.h" />
@@ -1479,6 +1482,7 @@ copy ..\libavcodec\avcodec.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\avdct.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\avfft.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\bsf.h "$(OutDir)"\include\libavcodec
+copy ..\libavcodec\codec.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_desc.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_id.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_par.h "$(OutDir)"\include\libavcodec
@@ -1567,6 +1571,7 @@ copy ..\libavcodec\avcodec.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\avdct.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\avfft.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\bsf.h "$(OutDir)"\include\libavcodec
+copy ..\libavcodec\codec.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_desc.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_id.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_par.h "$(OutDir)"\include\libavcodec
@@ -1662,6 +1667,7 @@ copy ..\libavcodec\avcodec.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\avdct.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\avfft.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\bsf.h "$(OutDir)"\include\libavcodec
+copy ..\libavcodec\codec.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_desc.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_id.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_par.h "$(OutDir)"\include\libavcodec
@@ -1755,6 +1761,7 @@ copy ..\libavcodec\avcodec.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\avdct.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\avfft.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\bsf.h "$(OutDir)"\include\libavcodec
+copy ..\libavcodec\codec.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_desc.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_id.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_par.h "$(OutDir)"\include\libavcodec
@@ -1849,6 +1856,7 @@ copy ..\libavcodec\avcodec.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\avdct.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\avfft.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\bsf.h "$(OutDir)"\include\libavcodec
+copy ..\libavcodec\codec.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_desc.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_id.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_par.h "$(OutDir)"\include\libavcodec
@@ -1941,6 +1949,7 @@ copy ..\libavcodec\avcodec.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\avdct.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\avfft.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\bsf.h "$(OutDir)"\include\libavcodec
+copy ..\libavcodec\codec.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_desc.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_id.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_par.h "$(OutDir)"\include\libavcodec
@@ -2041,6 +2050,7 @@ copy ..\libavcodec\avcodec.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\avdct.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\avfft.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\bsf.h "$(OutDir)"\include\libavcodec
+copy ..\libavcodec\codec.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_desc.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_id.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_par.h "$(OutDir)"\include\libavcodec
@@ -2140,6 +2150,7 @@ copy ..\libavcodec\avcodec.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\avdct.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\avfft.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\bsf.h "$(OutDir)"\include\libavcodec
+copy ..\libavcodec\codec.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_desc.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_id.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_par.h "$(OutDir)"\include\libavcodec
@@ -2240,6 +2251,7 @@ copy ..\libavcodec\avcodec.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\avdct.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\avfft.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\bsf.h "$(OutDir)"\include\libavcodec
+copy ..\libavcodec\codec.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_desc.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_id.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_par.h "$(OutDir)"\include\libavcodec
@@ -2339,6 +2351,7 @@ copy ..\libavcodec\avcodec.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\avdct.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\avfft.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\bsf.h "$(OutDir)"\include\libavcodec
+copy ..\libavcodec\codec.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_desc.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_id.h "$(OutDir)"\include\libavcodec
 copy ..\libavcodec\codec_par.h "$(OutDir)"\include\libavcodec
